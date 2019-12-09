@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import firebase, { todosRef } from "./config/firebase";
 import "./App.css";
+import LoginForm from "./components/LoginForm";
 
 class App extends React.Component {
   state = {
@@ -50,6 +51,11 @@ class App extends React.Component {
     const { user, list, inputValue } = this.state;
     return (
       <div className="App">
+        <LoginForm />
+        <br />
+        <br />
+        <br />
+
         <input
           type="text"
           value={inputValue}
